@@ -56,10 +56,10 @@ HUMANS_NEED_SURNAMES
 #FORCE_RANDOM_NAMES
 
 ## Unhash this to turn on automatic reopening of a player's job if they suicide at roundstart
-#REOPEN_ROUNDSTART_SUICIDE_ROLES
+REOPEN_ROUNDSTART_SUICIDE_ROLES
 
 ## Unhash to enable reopening of command level positions
-#REOPEN_ROUNDSTART_SUICIDE_ROLES_COMMAND_POSITIONS
+REOPEN_ROUNDSTART_SUICIDE_ROLES_COMMAND_POSITIONS
 
 ## Define the delay for roles to be reopened after the round starts in seconds.
 ## Has a minimum delay of 30 seconds, though it's suggested to keep over 1 min
@@ -71,15 +71,15 @@ HUMANS_NEED_SURNAMES
 
 
 ## ALERT LEVELS ###
-ALERT_GREEN All threats to the station have passed. Security may not have weapons visible, privacy laws are once again fully enforced.
-ALERT_BLUE_UPTO The station has received reliable information about possible hostile activity on the station. Security staff may have weapons visible, random searches are permitted.
+ALERT_GREEN All threats to the timeline have passed. Security may not have weapons visible, privacy laws are once again fully enforced.
+ALERT_BLUE_UPTO The agency has received reliable information about possible hostile activity on the timeline. Security staff may have weapons visible, random searches are permitted.
 ALERT_BLUE_DOWNTO The immediate threat has passed. Security may no longer have weapons drawn at all times, but may continue to have them visible. Random searches are still allowed.
-ALERT_RED_UPTO There is an immediate serious threat to the station. Security may have weapons unholstered at all times. Random searches are allowed and advised. Additionally, access requirements on some doors have been lifted.
-ALERT_RED_DOWNTO The station's destruction has been averted. There is still however an immediate serious threat to the station. Security may have weapons unholstered at all times, random searches are allowed and advised.
-ALERT_DELTA Destruction of the station is imminent. All crew are instructed to obey all instructions given by heads of staff. Any violations of these orders can be punished by death. This is not a drill.
+ALERT_RED_UPTO There is an immediate serious threat to the timeline. Security may have weapons unholstered at all times. Random searches are allowed and advised. Additionally, access requirements on some doors have been lifted.
+ALERT_RED_DOWNTO The agency's destruction has been averted. There is still however an immediate serious threat to the timeline. Security may have weapons unholstered at all times, random searches are allowed and advised.
+ALERT_DELTA Destruction of the timeline is imminent. All crew are instructed to obey all instructions given by heads of staff. Any violations of these orders can be punished by death. This is not a drill.
 
 ## The total weight of station goals possible for a round (allows multiple goals)
-STATION_GOAL_BUDGET 1
+STATION_GOAL_BUDGET 3
 
 ## GAME MODES ###
 
@@ -181,7 +181,7 @@ CONFIG_GATEWAY_CHANCE 0
 ## If the number of players ready at round starts exceeds this threshold, JOBS_HAVE_MINIMAL_ACCESS will automatically be enabled. Otherwise, it will be disabled.
 ## This is useful for accomodating both low and high population rounds on the same server.
 ## Comment this out or set to 0 to disable this automatic toggle.
-MINIMAL_ACCESS_THRESHOLD 20
+MINIMAL_ACCESS_THRESHOLD 100
 
 ## Comment this out this if you wish to use the setup where jobs have more access.
 ## This is intended for servers with low populations - where there are not enough
@@ -190,13 +190,13 @@ MINIMAL_ACCESS_THRESHOLD 20
 #JOBS_HAVE_MINIMAL_ACCESS
 
 ## Uncomment to give assistants maint access.
-#ASSISTANTS_HAVE_MAINT_ACCESS
+ASSISTANTS_HAVE_MAINT_ACCESS
 
 ## Uncoment to give security maint access. Note that if you dectivate JOBS_HAVE_MINIMAL_ACCESS security already gets maint from that.
-#SECURITY_HAS_MAINT_ACCESS
+SECURITY_HAS_MAINT_ACCESS
 
 ## Uncomment to give everyone maint access.
-#EVERYONE_HAS_MAINT_ACCESS
+EVERYONE_HAS_MAINT_ACCESS
 
 ## Comment this out this to make security officers spawn in departmental security posts
 #SEC_START_BRIG
@@ -210,7 +210,7 @@ DEPSEC_ACCESS_LEVEL 1
 
 ## GHOST INTERACTION ###
 ## Uncomment to let ghosts spin chairs. You may be wondering why this is a config option. Don't ask.
-#GHOST_INTERACTION
+GHOST_INTERACTION
 
 ## NEAR-DEATH EXPERIENCE ###
 ## Comment this out to disable mobs hearing ghosts when unconscious and very close to death
@@ -383,7 +383,7 @@ ROUNDSTART_RACES ethereal
 #ROUNDSTART_RACES metallic_hydrogen_golem
 
 ## Races that are straight upgrades. If these are on expect powergamers to always pick them
-#ROUNDSTART_RACES skeleton
+ROUNDSTART_RACES skeleton
 #ROUNDSTART_RACES zombie
 #ROUNDSTART_RACES slime
 #ROUNDSTART_RACES pod
@@ -405,7 +405,7 @@ ROUNDSTART_RACES ethereal
 ## The probability for nonhuman cadavers to spawn in the morgue.
 ## Only used if MORGUE_CADAVER_DISABLE_NONHUMANS is commented out
 ## If left undefined, defaults to 50%.
-MORGUE_CADAVER_OTHER_SPECIES_PROBABILITY 50
+MORGUE_CADAVER_OTHER_SPECIES_PROBABILITY 90
 
 ## A single specific Species ID to supplement human morgue cadavers.
 ## Set MORGUE_CADAVER_OTHER_SPECIES_PROBABILITY to determine the chances between being a human and this specific species.
@@ -423,7 +423,7 @@ OVERFLOW_JOB Assistant
 OVERFLOW_CAP -1
 
 ## Uncomment to bring back old grey suit assistants instead of the now default rainbow colored assistants.
-#GREY_ASSISTANTS
+GREY_ASSISTANTS
 
 ##Limit Spell Choices##
 ## Uncomment to disallow wizards from using certain spells that may be too chaotic/fun for your playerbase
@@ -455,13 +455,13 @@ BOMBCAP 20
 ## a less lootfilled or smaller or less round effecting ruin costs less to
 ## spawn, while the converse is true. Alter this number to affect the amount
 ## of ruins.
-LAVALAND_BUDGET 60
+LAVALAND_BUDGET 100
 
 ## Ice Moon Budget
-ICEMOON_BUDGET 90
+ICEMOON_BUDGET 100
 
 ## Space Ruin Budget
-Space_Budget 16
+Space_Budget 100
 
 ## Time in ds from when a player latejoins till the arrival shuttle docks at the station
 ## Must be at least 30. At least 55 recommended to be visually/aurally appropriate
@@ -497,13 +497,13 @@ SHIFT_TIME_START_HOUR 7
 #SHIFT_TIME_REALTIME
 
 ## Enable randomized shift start times. Overrides SHIFT_TIME_REALTIME and SHIFT_TIME_START_HOUR
-#RANDOMIZE_SHIFT_TIME
+RANDOMIZE_SHIFT_TIME
 
 ## A cap on how many monkeys may be created via monkey cubes
-MONKEYCAP 64
+MONKEYCAP 100
 
 ## A cap on how many mice can be bred via cheese wedges
-RATCAP 64
+RATCAP 100
 
 ## Maximum fine for a citation
 MAXFINE 2000
@@ -523,7 +523,7 @@ MAXFINE 2000
 
 ## Comment if you wish to enable title music playing at the lobby screen. This flag is disabled by default to facilitate better code testing on local machines.
 ## Do keep in mind that this flag will not affect individual player's preferences: if they opt-out on your server, it will never play for them.
-DISALLOW_TITLE_MUSIC
+#DISALLOW_TITLE_MUSIC
 
 ## If enabled, then when the database is disabled, all players will get tutorials.
 ## This is primarily useful for developing tutorials. If you have a proper DB setup, you
